@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="utf-8" />
+        <title>To Do -list</title>
+
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body onload="thisDate();">
+        <h1>TO DO -LIST</h1>
+        <div id="formdiv">
+            <p>Write in the box below to add to your To Do -list!</p>
+            <form onsubmit="return false;">
+                <input id="textfield" type="text" value="Write here!" onclick="selected();">
+                <input id="btn" onclick="addToList();" type="button" value="Add">
+        </form>
+        </div>
+        <div id="tablediv">
+            <p id="date"></p>
+            <table id="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="check" onclick="isChecked(this);">
+                        </td>
+                        <td id="underline"></td>
+                        <td>
+                            <button id="delete" onclick="deleteRow(this);">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="delete" onclick="deleteAll();">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+        </div>
+    </body>
+</html>

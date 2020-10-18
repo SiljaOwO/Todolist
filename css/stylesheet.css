@@ -6,7 +6,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     margin-bottom: 5%;
-    font-family: "Arial Nova";
+    font-family: "Chilanka";
 }
 
 /*Headline styling*/
@@ -52,6 +52,7 @@ input[type=button] {
     padding: 0.3% 0.5%;
     border: groove;
     border-color: rgba(148, 198, 255, 0.315);
+    font-family: "Chilanka";
 }
 
 input[type=button]:hover {

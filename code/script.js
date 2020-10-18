@@ -16,6 +16,7 @@ function addToList() {
     //Check if input is empty
     if (text == "") {
         alert("Please fill something!");
+        document.getElementById('textfield').style.borderWidth = "thick";
     } 
     //If input is not empty, add user's input to the table
     else {
@@ -34,6 +35,8 @@ function addToList() {
 function addRow() {
     var text = document.getElementById('textfield').value;
     var table = document.getElementById('table');
+    
+    document.getElementById('textfield').style.borderWidth = "2px";
 
     var row = table.insertRow();
     var cell1 = row.insertCell(0);

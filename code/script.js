@@ -119,11 +119,13 @@ function selected() {
 
 //Get data from local storage
 function getData() {
-    for (var i = 0; i < localStorage.length; i++) {
-        var x = localStorage.getItem(i);
-        addDataRow(x);
+    if (localStorage.length != 0) {
+        for (var i = 0; i < localStorage.length; i++) {
+            var x = localStorage.getItem(i);
+            addDataRow(x);
+        }
+        document.getElementById('table').deleteRow(0);
     }
-    document.getElementById('table').deleteRow(0);
 }
 
 //Make table of data that is in local storage
